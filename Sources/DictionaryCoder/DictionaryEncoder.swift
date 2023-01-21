@@ -15,10 +15,10 @@ open class DictionaryEncoder {
         /// Defer to `Date` for choosing an encoding. This is the default strategy.
         case deferredToDate
         
-        /// Encode the `Date` as a UNIX timestamp (as a JSON number).
+        /// Encode the `Date` as a UNIX timestamp (as a double).
         case secondsSince1970
         
-        /// Encode the `Date` as UNIX millisecond timestamp (as a JSON number).
+        /// Encode the `Date` as UNIX millisecond timestamp (as a double).
         case millisecondsSince1970
         
         /// Encode the `Date` as an ISO-8601-formatted string (in RFC 3339 format).
